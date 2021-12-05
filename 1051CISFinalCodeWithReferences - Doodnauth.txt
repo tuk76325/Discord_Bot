@@ -1,0 +1,34 @@
+import discord
+import random
+
+token = 'OTE2OTU1Mzg3MzMxMjMxNzU0.YaxrQA.lmZ81PqB3ZYK8SuD0HtfM8-gWy0'
+lst = ['It is certain', 'It is decidedly so.', 'Without a doubt.', 'Yes definitely', 'You may rely on it.', 'As I see it, yes', 'Most likely.', 'Outlook good.', 'Yes.',
+       'Signs point to yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', "Don't count on it.",
+       'My reply is no.', 'My sources say no.', 'Outlook not so good', 'Very doubtful']
+
+client = discord.Client()
+
+@client.event
+async def on_ready():
+        print('We have logged in as {0.user}'.format(client))
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('!8ball'):
+        await message.channel.send(lst[random.randint(0, 19)])
+
+
+client.run(token)
+
+References:
+
+	freeCodeCamp.org. “Code a Discord Bot with Python - YouTube.” Code a Discord Bot with Python - Host for Free in the Cloud, 15 Dec. 2020, https://www.youtube.com/watch?v=SPTfmiYiuok. 
+
+	“Frequently Asked Questions¶.” Frequently Asked Questions, https://discordpy.readthedocs.io/en/stable/faq.html#why-do-my-arguments-require-quotes. 
+
+	Palace, Code. “Creating a Discord Bot in Python 3.9 Tutorial ... - Youtube.” Creating a Discord Bot in Python 3.9 Tutorial (Fast &amp; Easy), 22 Feb. 2021, https://www.youtube.com/watch?v=fU-kWx-OYvE. 
+
+	Ronquillo, Alex. “How to Make a Discord Bot in Python.” Real Python, Real Python, 15 May 2021, https://realpython.com/how-to-make-a-discord-bot-python/. 
