@@ -1,6 +1,5 @@
 # FinalProjectCIS1051
-This is the final project.
 
-Everything said in this file will be conveyed in the YouTube video, so if you do not like reading you can watch the video.
+This project utilized the Discord API to manufacture a bot that could interpret and respond to select messages in a server. 
 
-Throughout this project, I was constantly learning new things. One of the most important and universal things I learned was the use of "pip" installing the API necessary for Discord. One of the more specific things I learned was the use of @client.event to start a block of code for Discord bots. With that being said, I also struggled at some points in this project, with one of them being the use of a coro (coroutine) in the execution of my code. At first I had no idea what a coroutine was, and how it was used in the coding process, but after about an hour or so of digging around my references and the Discord FAQ, I realized that I didn't need the coroutine at all! So it took a while, but I eventually got over that hurdle.
+This project was the culmination of everything I learned in the CIS1051 Python Programming class. Throughout this project, I was constantly learning new things. One of the most important and universal things I learned was the use of pip installing the API necessary for Discord, furthermore, this project taught me how to effectively consult and apply documentation for an unknown API. I also gained a greater appreciation on the coding aspect for how automated bots read and receive messages. Finally, I learned how the client side of bots work, with their ability to be run on a local server, how much computing power they use, and how much memory they consume. 
